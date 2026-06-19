@@ -32,7 +32,7 @@ const Navbar = () => {
     { to: "/Menucard", label: "menu" },
     { to: "/ProductOrder", label: "order" },
     { to: "/contact", label: "contact" },
-    { to: "/dashborad", label: "dashborad" },
+    { to: "/Dashboard", label: "dashborad" },
     {
       label: "Profile",
       dropdown: [

@@ -10,16 +10,17 @@ import heroimg4 from '../../assets/assets/home/04.jpg';
 import heroimg5 from '../../assets/assets/home/05.png';
 import heroimg6 from '../../assets/assets/home/06.png';
 
-// Components Import (সঠিক রিলেটিভ পাথ অনুযায়ী)
+
 import Category from "./Category";
 import BistroSection from "../../Allcomponent/Home/Bistrosection";
 import FromOurMenu from "../../Allcomponent/Home/Fromourmenu";
-import MenuSection from "../../Allcomponent/Home/order"; // order.jsx ফাইলটি Allcomponent ফোল্ডারে থাকায় '../' ব্যবহার করা হয়েছে
+import MenuSection from "../../Allcomponent/Home/order"; 
+import Map from "../../Allcomponent/Home/Map";
 
 const Hero = () => {
   return (
     <div className="space-y-16">
-      {/* ১. ক্যারোসেল/ব্যানার সেকশন সবার উপরে থাকবে */}
+      
       <div className="w-full">
         <Carousel 
           showThumbs={true} 
@@ -49,17 +50,16 @@ const Hero = () => {
         </Carousel>
       </div>
 
-      {/* ২. ক্যাটাগরি সেকশন */}
+  
       <Category />
 
-      {/* ৩. বিস্ট্রো ব্যানার সেকশন */}
       <BistroSection />
 
-      {/* ৪. পপুলার মেনু সেকশন */}
       <MenuSection />
 
-      {/* ৫. স্পেশাল অফার/মেনু সেকশন */}
+   
       <FromOurMenu />
+      <Map></Map>
     </div>
   );
 };
